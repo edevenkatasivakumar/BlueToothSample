@@ -12,6 +12,9 @@
 		7017AAF62228FCE6004A0DA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7017AAF42228FCE6004A0DA0 /* Main.storyboard */; };
 		7017AAF82228FCE6004A0DA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7017AAF72228FCE6004A0DA0 /* Assets.xcassets */; };
 		7017AAFB2228FCE6004A0DA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7017AAF92228FCE6004A0DA0 /* LaunchScreen.storyboard */; };
+		7017AB0422290210004A0DA0 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7017AB0322290210004A0DA0 /* CoreBluetooth.framework */; };
+		7017AB0722293824004A0DA0 /* DeviceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7017AB0522293824004A0DA0 /* DeviceTableViewCell.swift */; };
+		7017AB0822293824004A0DA0 /* DeviceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7017AB0622293824004A0DA0 /* DeviceTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		7017AAF72228FCE6004A0DA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7017AAFA2228FCE6004A0DA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7017AAFC2228FCE6004A0DA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7017AB0322290210004A0DA0 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		7017AB0522293824004A0DA0 /* DeviceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceTableViewCell.swift; sourceTree = "<group>"; };
+		7017AB0622293824004A0DA0 /* DeviceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeviceTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7017AB0422290210004A0DA0 /* CoreBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,7 @@
 			children = (
 				7017AAEF2228FCE6004A0DA0 /* BlueToothSample */,
 				7017AAEE2228FCE6004A0DA0 /* Products */,
+				7017AB0222290210004A0DA0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +68,18 @@
 				7017AAF72228FCE6004A0DA0 /* Assets.xcassets */,
 				7017AAF92228FCE6004A0DA0 /* LaunchScreen.storyboard */,
 				7017AAFC2228FCE6004A0DA0 /* Info.plist */,
+				7017AB0522293824004A0DA0 /* DeviceTableViewCell.swift */,
+				7017AB0622293824004A0DA0 /* DeviceTableViewCell.xib */,
 			);
 			path = BlueToothSample;
+			sourceTree = "<group>";
+		};
+		7017AB0222290210004A0DA0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7017AB0322290210004A0DA0 /* CoreBluetooth.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +144,7 @@
 				7017AAFB2228FCE6004A0DA0 /* LaunchScreen.storyboard in Resources */,
 				7017AAF82228FCE6004A0DA0 /* Assets.xcassets in Resources */,
 				7017AAF62228FCE6004A0DA0 /* Main.storyboard in Resources */,
+				7017AB0822293824004A0DA0 /* DeviceTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7017AAF32228FCE6004A0DA0 /* ViewController.swift in Sources */,
+				7017AB0722293824004A0DA0 /* DeviceTableViewCell.swift in Sources */,
 				7017AAF12228FCE6004A0DA0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +295,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QYK78JKXFU;
 				INFOPLIST_FILE = BlueToothSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sivakumar.BlueToothSample;
@@ -289,6 +310,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QYK78JKXFU;
 				INFOPLIST_FILE = BlueToothSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sivakumar.BlueToothSample;
